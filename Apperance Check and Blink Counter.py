@@ -33,7 +33,7 @@ while True:
         down = face[152]
 
         dis, _= detector.findDistance(up, down)
-        if dis<160 :
+        if dis<165 :
             cvzone.putTextRect(img, f"dis = {dis}   Come Closer or Be appeared Physically", (50, 100),1,1,
                                colorR=color)
             imgStack = cvzone.stackImages([img, img], 2, 1)
